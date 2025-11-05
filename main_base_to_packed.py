@@ -114,7 +114,7 @@ def update_google_sheet_with_dataframe(df_to_upload):
         client = gspread.authorize(creds)
         
         # ATENÇÃO: Use o nome correto da sua planilha e da aba
-        planilha = client.open("Stage Out Management - GO1 - SPX")
+        planilha = client.open("Stage Out Management - GO2 - SPX")
         aba = planilha.worksheet("Packed")
         
         aba.clear() # Limpa a aba antes de inserir novos dados
